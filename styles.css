@@ -17,10 +17,31 @@ body {
     border-bottom: 6px solid #FFF8DC;
 }
 
+.gallery {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 20px 10px;
+    gap: 16px;
+}
 
-img {
+.gallery img {
     width: 100%;
     max-width: 350px;
     height: 300px;
     object-fit: cover;
+    border-radius: 10px;
+    padding: 6px;
+    background-color: #FFD700;
+    border: 14px solid #fff;
+}
+
+.gallery::after {
+    content: "";
+    width: 100%;
+    max-width: 350px;
 }
